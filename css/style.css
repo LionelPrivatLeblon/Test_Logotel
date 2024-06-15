@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+}
+body {
+  font-size: 1.5rem;
+}
+
+.container{
+  background: #f1f1f1;
+  width: 1403px;
+  margin: auto;
+  height: 1000px;
+}
+/*******************************************NAVBAR*******************************************************/
+nav#navbar{
+  height: 120px;
+  opacity: 0.8;
+  background: #272727;
+  padding-left: 60px;
+  padding-right: 172px;
+}
+nav#navbar a{
+  opacity: 1;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.uk-navbar-nav>li.uk-active>a {
+  color: #F07C79;
+}
+.uk-navbar-nav>li>a{
+  color: #ffffff;
+}
+.uk-navbar-nav>li:hover>a {
+  color: #F07C79;
+}
+.uk-slider-container{
+  top: 0;
+  height: 100vh;
+}
+.uk-slider-container h2{
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Helvetica-Regular";
+  font-size: 60px;
+  font-weight: 400;
+  font-style: Regular;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 80px;
+}
+
+.uk-slider-container .uk-panel div{
+  background: red;
+  position: absolute;
+  left: 373px;
+  top: 374px;
+  width: 547px;
+  height: 500px;
+}

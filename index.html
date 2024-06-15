@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	    <link rel="stylesheet" href="style.css" />
-	</head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+		<script src="js/script.js"></script>
+		<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');</style>
+    </head>
 	<body>
-        <script src="script.js"></script>
+		<nav class="uk-navbar-container" id="navbar" uk-navbar uk-sticky="start: 80">
+			<div class="uk-navbar-left">
+				<img src="images/LOGO_BIANCO.png" width="164px" height="60px">
+			</div>
+			<div class="uk-navbar-right">
+				<ul class="uk-navbar-nav">
+					<li><a href="#">SLIDER</a></li>
+					<li>
+						<a href="#">NEWS</a>
+					</li>
+					<li><a href="#">PERCORSO</a></li>
+					<li><a href="#">TAB</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--SLIDE-->
+		<div class="uk-position-absolute uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+			<div class="uk-slider-items">
+				<div class="uk-width-1-1@m">
+					<div class="uk-panel">
+						<img src="images/slider-1.png" width="1800" height="1200" alt="">
+						<div class="uk-position-center uk-text-center">
+							<h2>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p>SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-1@m">
+					<div class="uk-panel">
+						<img src="images/slider-2.jpg" width="1800" height="1200" alt="">
+						<div class="uk-position-center uk-text-center">
+							<h2 uk-slider-parallax="x: 100,-100">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p uk-slider-parallax="x: 200,-200">SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-1@m">
+					<div class="uk-panel">
+						<img src="images/slider-3.jpg" width="1800" height="1200" alt="">
+						<div class="uk-position-center uk-text-center">
+							<h2 uk-slider-parallax="x: 100,-100">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p uk-slider-parallax="x: 200,-200">SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-1@m">
+					<div class="uk-panel">
+						<img src="images/slider-4.jpg" width="1800" height="1200" alt="">
+						<div class="uk-position-center uk-text-center">
+							<h2 uk-slider-parallax="x: 100,-100">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p uk-slider-parallax="x: 200,-200">SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slider-item="previous"><img src="images/chevron_sinistra.png" alt="" height="46px" width="29px"/></a>
+			<a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slider-item="next"><img src="images/chevron_destra.png" alt="" height="46px" width="29px"/></a>
+		
+		</div>
+		<div class="container">
+			
+		</div>
 	</body>
 </html>

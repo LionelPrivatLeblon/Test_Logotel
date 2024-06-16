@@ -14,10 +14,15 @@ body {
   background: #f1f1f1;
   width: 1403px;
   margin: auto;
-  height: 1000px;
+  height: 2000px;
+}
+section{
+  padding: 40px;
 }
 /*******************************************NAVBAR*******************************************************/
 nav#navbar{
+  position: absolute;
+  width: 100vw;
   height: 120px;
   opacity: 0.8;
   background: #272727;
@@ -58,10 +63,74 @@ nav#navbar a{
 }
 
 .uk-slider-container .uk-panel div{
-  background: red;
   position: absolute;
   left: 373px;
-  top: 374px;
   width: 547px;
   height: 500px;
+}
+
+.uk-slider-items > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust the height as needed */
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+}
+.uk-slider-items img {
+  max-width: 100%;
+  height: auto;
+  width: 100vw;
+}
+.uk-slider-container  .uk-panel div .slider_cta{
+  border-radius: 16px;
+opacity: 1;
+background-color: rgba(240, 124, 121, 1);
+width: 195px;
+height: 60px;
+text-transform: uppercase;
+position: absolute;
+left: 0;
+}
+
+.uk-card-media-top img{
+  transform: scaleX(-1);
+  position: relative;
+    top: -100px;
+}
+.uk-card-media-top{
+  height: 240px;
+  overflow: hidden;
+}
+.uk-card-body{
+  background-color: #F3F3F3;
+}
+.uk-card-default .uk-card-body h3{
+  opacity: 1;
+color: #ED6562;
+font-family: "Roboto Mono", monospace;
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 0px;
+text-align: left;
+line-height: 30px;
+margin-top: 20px;
+}
+.uk-card-default .uk-card-body p{
+opacity: 1;
+color: rgba(70, 70, 70, 1);
+font-family: "Roboto-Regular";
+font-size: 20px;
+font-weight: 400;
+letter-spacing: 0px;
+text-align: justify;
+}
+.uk-card-default .uk-card-body p.date{
+opacity: 1;
+color: rgba(131, 128, 128, 1);
+font-size: 14px;
+font-weight: 700;
+font-style: Bold;
+text-align: left;
+line-height: 30px;
 }

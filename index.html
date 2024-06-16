@@ -12,7 +12,7 @@
 		<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');</style>
     </head>
 	<body>
-		<nav class="uk-navbar-container" id="navbar" uk-navbar uk-sticky="start: 80">
+		<nav class="uk-navbar-container" id="navbar" uk-navbar uk-sticky="start: 100vh">
 			<div class="uk-navbar-left">
 				<img src="images/LOGO_BIANCO.png" width="164px" height="60px">
 			</div>
@@ -29,42 +29,46 @@
 		</nav>
 
 		<!--SLIDE-->
-		<div class="uk-position-absolute uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+		<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
 			<div class="uk-slider-items">
-				<div class="uk-width-1-1@m">
+				<div class="uk-width-1-1 uk-width-1-1@s uk-width-1-1@m">
 					<div class="uk-panel">
 						<img src="images/slider-1.png" width="1800" height="1200" alt="">
-						<div class="uk-position-center uk-text-center">
+						<div class="uk-position-center uk-text-left">
 							<h2>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
 							<p>SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+							<div class="slider_cta uk-flex uk-flex-center uk-flex-middle">Call to action</div>
 						</div>
 					</div>
 				</div>
-				<div class="uk-width-1-1@m">
+				<div class="uk-width-1-1 uk-width-1-1@s uk-width-1-1@m">
 					<div class="uk-panel">
 						<img src="images/slider-2.jpg" width="1800" height="1200" alt="">
-						<div class="uk-position-center uk-text-center">
-							<h2 uk-slider-parallax="x: 100,-100">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
-							<p uk-slider-parallax="x: 200,-200">SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						<div class="uk-position-center uk-text-left">
+							<h2>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p>SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+							<div class="slider_cta uk-flex uk-flex-center uk-flex-middle">Call to action</div>
 						</div>
 					</div>
 				</div>
-				<div class="uk-width-1-1@m">
+				<div class="uk-width-1-1 uk-width-1-1@s uk-width-1-1@m">
 					<div class="uk-panel">
 						<img src="images/slider-3.jpg" width="1800" height="1200" alt="">
-						<div class="uk-position-center uk-text-center">
-							<h2 uk-slider-parallax="x: 100,-100">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
-							<p uk-slider-parallax="x: 200,-200">SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						<div class="uk-position-center uk-text-left">
+							<h2>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p>SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+							<div class="slider_cta uk-flex uk-flex-center uk-flex-middle">Call to action</div>
 						</div>
 					</div>
 				</div>
-				<div class="uk-width-1-1@m">
+				<div class="uk-width-1-1 uk-width-1-1@s uk-width-1-1@m">
 					<div class="uk-panel">
 						<img src="images/slider-4.jpg" width="1800" height="1200" alt="">
-						<div class="uk-position-center uk-text-center">
-							<h2 uk-slider-parallax="x: 100,-100">LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
-							<p uk-slider-parallax="x: 200,-200">SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+						<div class="uk-position-center uk-text-left">
+							<h2>LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT</h2>
+							<p>SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER.</p>
+							<div class="slider_cta uk-flex uk-flex-center uk-flex-middle">Call to action</div>
 						</div>
 					</div>
 				</div>
@@ -74,8 +78,48 @@
 			<a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slider-item="next"><img src="images/chevron_destra.png" alt="" height="46px" width="29px"/></a>
 		
 		</div>
+
 		<div class="container">
-			
+			<section>
+			<div class="uk-child-width-1-3@m uk-child-width-1-1@s" uk-grid>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="images/news-1.png" width="1800" height="1200" alt="">
+						</div>
+						<div class="uk-card-body">
+							<p class="date">13.09.2020</p>
+							<h3 class="uk-card-title">Lorem ipsum dolor sit amet, consectetuer</h3>
+							<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim…</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="images/news-2.png" width="1800" height="1200" alt="">
+						</div>
+						<div class="uk-card-body">
+							<p class="date">13.09.2020</p>
+							<h3 class="uk-card-title">Lorem ipsum dolor sit amet, consectetuer</h3>
+							<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim…</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="uk-card uk-card-default">
+						<div class="uk-card-media-top">
+							<img src="images/news-3.png" width="1800" height="1200" alt="">
+						</div>
+						<div class="uk-card-body">
+							<p class="date">13.09.2020</p>
+							<h3 class="uk-card-title">Lorem ipsum dolor sit amet, consectetuer</h3>
+							<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim…</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		</div>
 	</body>
 </html>

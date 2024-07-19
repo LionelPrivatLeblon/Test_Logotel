@@ -141,6 +141,10 @@ a.cta {
   margin: auto;
 }
 
+.owl-theme .owl-nav span {
+  color: transparent;
+}
+
 .owl-nav button {
   background: #000;
   color: #fff;
@@ -232,7 +236,7 @@ a.cta {
 
 .container {
   background: #fff;
-  width: 100%;
+  width: 1440px;
   margin: auto;
 }
 
@@ -408,7 +412,7 @@ section.cards2 .card {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 section.cards2 .card .card-picture {
@@ -437,7 +441,7 @@ section.cards2 .card-title {
   letter-spacing: 0px;
   text-align: center;
   height: 60px;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 section.cards2 .full-text {
@@ -446,7 +450,7 @@ section.cards2 .full-text {
   letter-spacing: 0px;
   text-align: center;
   line-height: 24px;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 section.cards2 .card {
@@ -500,7 +504,7 @@ section.cards2 .bleu .card-title {
 
 section.cards2 .card a.cta {
   color: #ffffff;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 section.cards2 .card:hover a.cta {
@@ -719,6 +723,61 @@ section.cards2 .card:hover .full-text {
   line-height: 24px;
 }
 
+/*****************************************FOOTER*********************************************/
+
+footer {
+  background-color: #000;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.footerLeft {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.footerLeft p {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: Medium;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footerRight {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.footerRight p {
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  font-size: 40px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
 @media screen and (max-width: 700px) {
   .container {
     width: 100vw;
@@ -782,5 +841,21 @@ section.cards2 .card:hover .full-text {
   .accordion-header,
   .accordion-content p.titre {
     font-size: 1.125rem;
+  }
+
+  footer {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerLeft {
+    align-items: center;
+  }
+
+  .footerRight p,
+  .footerLeft p {
+    text-align: center;
   }
 }

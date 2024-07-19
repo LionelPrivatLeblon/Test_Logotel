@@ -21,3 +21,48 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+    onInitialized: addNumberedDots,
+    onChanged: updateActiveDot,
+  });
+
+  function addNumberedDots(event) {
+    var dots = $(event.target).find(".owl-dot");
+    dots.each(function (index) {
+      $(this).html("<span>" + (index + 1) + "</span>");
+    });
+  }
+
+  function updateActiveDot(event) {
+    var dots = $(event.target).find(".owl-dot");
+    dots.removeClass("active");
+    var activeIndex =
+      event.item.index - event.relatedTarget._clones.length / 2;
+    if (activeIndex < 0) {
+      activeIndex = dots.length + activeIndex;
+    } else if (activeIndex >= dots.length) {
+      activeIndex = activeIndex % dots.length;
+    }
+    dots.eq(activeIndex).addClass("active");
+  }
+});

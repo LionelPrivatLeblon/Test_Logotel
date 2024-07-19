@@ -71,15 +71,11 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.accordion-header').click(function () {
     var $content = $(this).next('.accordion-content');
-
-    // Si le contenu est déjà ouvert, on le ferme
     if ($content.is(':visible')) {
       $content.slideUp();
     } else {
-      // Ferme tous les autres contenus ouverts
       $('.accordion-content').slideUp();
 
-      // Ouvre le contenu correspondant à l'en-tête cliqué
       $content.slideDown();
     }
   });

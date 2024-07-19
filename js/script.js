@@ -1,3 +1,4 @@
+//NAV FIXED AU SCROLL
 window.addEventListener('scroll', function () {
   var navbar = document.getElementById('navbar');
   var sticky = window.innerHeight;
@@ -8,7 +9,7 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('fixed');
   }
 });
-
+//BTN NAV ACTIF
 document.addEventListener('DOMContentLoaded', function () {
   var navLinks = document.querySelectorAll('.navRight a');
 
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
+//SLIDER
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -65,4 +66,21 @@ $(document).ready(function () {
     }
     dots.eq(activeIndex).addClass("active");
   }
+});
+//ACCORDEON
+$(document).ready(function () {
+  $('.accordion-header').click(function () {
+    var $content = $(this).next('.accordion-content');
+
+    // Si le contenu est déjà ouvert, on le ferme
+    if ($content.is(':visible')) {
+      $content.slideUp();
+    } else {
+      // Ferme tous les autres contenus ouverts
+      $('.accordion-content').slideUp();
+
+      // Ouvre le contenu correspondant à l'en-tête cliqué
+      $content.slideDown();
+    }
+  });
 });

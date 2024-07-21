@@ -521,6 +521,28 @@ section.cards2 .card:hover .full-text {
 }
 
 /*****************************************ACCORDEON*********************************************/
+.section-accordion {
+  position: relative;
+}
+
+.section-accordion::after,
+.section-accordion::before {
+  position: absolute;
+  height: 1px;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: #000;
+}
+
+.section-accordion::after {
+  top: -1px;
+}
+
+.section-accordion::before {
+  bottom: -1px;
+}
 
 .accordion {
   width: 100%;
@@ -857,5 +879,15 @@ footer {
   .footerRight p,
   .footerLeft p {
     text-align: center;
+  }
+
+  .accordion-item:nth-child(odd) .checkpoint {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .accordion-item:nth-child(odd) .accordion-header div:first-child .quarter-circle {
+    position: absolute;
+    left: 0px;
   }
 }

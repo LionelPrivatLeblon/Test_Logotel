@@ -847,14 +847,6 @@ footer {
     padding: 10px;
   }
 
-  .accordion-content2>div.barre-droit {
-    left: 69px;
-  }
-
-  .accordion-content2>div.barre-gauche {
-    right: 69px;
-  }
-
   .line2 {
     min-height: 500px;
   }
@@ -892,5 +884,24 @@ footer {
   .accordion-item:nth-child(odd) .accordion-header div:first-child .quarter-circle {
     position: absolute;
     left: 0px;
+  }
+
+  .accordion-item {
+    margin: auto;
+  }
+
+  .barre-droit .line2 {
+    position: relative;
+    right: 25px;
+  }
+
+  .barre-gauche .line2 {
+    left: 25px;
+    position: relative;
+  }
+
+  .accordion-header>div:nth-child(2),
+  .accordion-content2>div:nth-child(2) {
+    width: 55%;
   }
 }

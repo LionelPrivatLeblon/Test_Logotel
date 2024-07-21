@@ -30,7 +30,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     responsive: {
       0: {

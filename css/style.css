@@ -883,7 +883,11 @@ footer {
 
   .accordion-item:nth-child(odd) .checkpoint {
     position: relative;
-    bottom: 100px;
+    top: 50px;
+  }
+
+  .accordion-item:nth-child(odd) .checkpoint div:first-child {
+    order: 2;
   }
 
   .accordion-item:nth-child(odd) .accordion-header div:first-child .quarter-circle {
